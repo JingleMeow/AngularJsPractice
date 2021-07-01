@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'BookStore';
   bookList: Book[] = [];
   bookService: BookService;
+  displayedColumns: string[] = ['title', 'author'];
 
   constructor(bookService: BookService) {
     this.bookService = bookService;

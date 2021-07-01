@@ -1,0 +1,42 @@
+div.contentContainer {
+    background-color: white;
+    min-height: 100vh;
+}
+
+table.bookList {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 1200px) {
+    div.contentContainer {
+        width: 1127px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    div.contentContainer {
+        width: 933px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    div.contentContainer {
+        width: 723px;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div.contentContainer {
+        width: auto!important;
+        margin-left: 1em!important;
+        margin-right: 1em!important;
+    }
+}
