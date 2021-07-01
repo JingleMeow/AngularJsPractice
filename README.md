@@ -1,0 +1,2 @@
+# AngularJsPractice
+AngularJs practice projects.
