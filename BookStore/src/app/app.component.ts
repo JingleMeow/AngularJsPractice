@@ -1,6 +1,4 @@
-import { Book } from './model/book';
 import { Component } from '@angular/core';
-import { BookService } from './services/book.service';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +7,10 @@ import { BookService } from './services/book.service';
 })
 export class AppComponent {
   title = 'BookStore';
-  bookList: Book[] = [];
-  bookService: BookService;
-  displayedColumns: string[] = ['title', 'author'];
 
-  constructor(bookService: BookService) {
-    this.bookService = bookService;
+  constructor() {
   }
 
   ngOnInit() {
-    this.bookList = this.bookService.getAllBooks();
   }
 }
