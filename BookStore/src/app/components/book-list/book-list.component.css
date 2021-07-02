@@ -3,3 +3,8 @@ table.bookList {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+a.addButton {
+    float: right;
+    margin: 20px;
+}

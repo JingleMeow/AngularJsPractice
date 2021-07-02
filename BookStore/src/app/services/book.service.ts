@@ -11,6 +11,11 @@ export class BookService {
   getAllBooks(): Book[] {
     return books;
   }
+
+  addBook(title: string, author: string): void {
+    let newBook = new Book(title, author);
+    books.push(newBook);
+  }
 }
 
 const books = [

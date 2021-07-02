@@ -1,0 +1,23 @@
+mat-card.newBookCard {
+    max-width: 800px;
+    background-color: #f4fcfb;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+mat-card-content {
+    padding: 20px 20px 0px 20px;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-card-actions {
+    text-align: right;
+}
+
+[mat-flat-button] {
+    margin-right: 15px;
+}

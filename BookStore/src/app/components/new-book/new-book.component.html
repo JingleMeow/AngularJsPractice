@@ -1,0 +1,27 @@
+<mat-card class="newBookCard">
+    <mat-card-header>
+        <mat-card-title>New Book</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Title</mat-label>
+                <input matInput placeholder="Please input book title" [(ngModel)]="title">
+                <mat-hint></mat-hint>
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="outline">
+                <mat-label>Author</mat-label>
+                <input matInput placeholder="Please input book author" [(ngModel)]="author">
+                <mat-hint></mat-hint>
+            </mat-form-field>
+        </p>
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+        <a mat-flat-button color="accent" routerLink="/booklist/">Cancel</a>
+        <button mat-flat-button color="primary" (click)="onSaveButtonClick()">Save</button>
+    </mat-card-actions>
+</mat-card>
