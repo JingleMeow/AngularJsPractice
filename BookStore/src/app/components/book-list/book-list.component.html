@@ -1,4 +1,8 @@
 <table mat-table class="bookList" [dataSource]="bookList">
+    <ng-container matColumnDef="No.">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let i=index"> {{i + 1}} </td>
+    </ng-container>
     <ng-container matColumnDef="title">
         <th mat-header-cell *matHeaderCellDef>Title</th>
         <td mat-cell *matCellDef="let book"> {{book.title}} </td>
@@ -6,6 +10,12 @@
     <ng-container matColumnDef="author">
         <th mat-header-cell *matHeaderCellDef>Author</th>
         <td mat-cell *matCellDef="let book"> {{book.author}} </td>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let i=index">
+            <button mat-flat-button color="warn" (click)="onDelete(i)">Delete</button>
+        </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

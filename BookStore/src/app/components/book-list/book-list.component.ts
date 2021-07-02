@@ -9,14 +9,17 @@ import { BookService } from 'src/app/services/book.service';
 })
 export class BookListComponent implements OnInit {
   bookList: Book[] = [];
-  bookService: BookService;
-  displayedColumns: string[] = ['title', 'author'];
+  displayedColumns: string[] = ['No.', 'title', 'author', 'actions'];
 
-  constructor(bookService: BookService) {
-    this.bookService = bookService;
+  constructor(private bookService: BookService) {
   }
 
   ngOnInit() {
+    this.bookList = this.bookService.getAllBooks();
+  }
+
+  onDelete(index: number) {
+    this.bookService.deleteBook(index);
     this.bookList = this.bookService.getAllBooks();
   }
 }

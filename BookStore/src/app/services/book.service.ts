@@ -9,12 +9,16 @@ export class BookService {
   constructor() { }
 
   getAllBooks(): Book[] {
-    return books;
+    return [...books];
   }
 
   addBook(title: string, author: string): void {
     let newBook = new Book(title, author);
     books.push(newBook);
+  }
+
+  deleteBook(index: number): void {
+    books.splice(index, 1);
   }
 }
 
