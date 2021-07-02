@@ -14,12 +14,14 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    NewBookComponent
+    NewBookComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
