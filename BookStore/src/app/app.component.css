@@ -34,3 +34,8 @@ div.contentContainer {
         margin-right: 1em!important;
     }
 }
+
+a.homeLink {
+    color: white!important;
+    text-decoration: none!important;
+}
