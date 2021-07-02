@@ -6,22 +6,30 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Files description
+#### app.moudule.ts
+The root module.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#### app-routing.module.ts
+The application routing module.
 
-## Further help
+#### app.component.ts, app.component.html, app.component.css
+The typescript class, html template and css styles of the root component.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### book-list.component.ts, book-list.component.html, book-list.component.css
+The typescript class, html template and css styles of the BookListComponent which is used to show all the books in a list.
+
+#### new-book.component.ts, new-book.component.html, new-book.component.css
+The typescript class, html template and css styles of the NewBookComponent whick is used to add a new book.
+
+#### book.ts
+The Book model class.
+
+#### book.service.ts
+The service provides functions to retrieve books, add a new book and delete a book.
+#### book.service.spec.ts
+Unit tests for the BookService.
